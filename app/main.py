@@ -13,12 +13,16 @@ from app.routes.content import router as content_router
 from app.routes.adaptation import router as adaptation_router
 from app.routes.progress import router as progress_router
 from app.routes.cv import router as cv_router
+from app.routes.chat import router as chat_router
+
+
 
 
 app = FastAPI(
     title="S.U.N.D.A.Y. API",
     version="1.0.0"
 )
+
 
 
 app.add_middleware(
@@ -64,6 +68,8 @@ app.include_router(
 app.include_router(
     progress_router
 )
+
+app.include_router(chat_router)
 
 
 @app.get("/")

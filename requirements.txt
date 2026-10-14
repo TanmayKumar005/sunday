@@ -38,3 +38,15 @@ numpy>=1.26,<3
 opencv-python==4.11.0.86
 torch>=2.2
 torchvision>=0.17
+
+```txt
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+pydantic
+pydantic-settings
+python-dotenv
+openai
+```
+

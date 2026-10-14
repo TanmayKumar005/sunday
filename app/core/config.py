@@ -9,6 +9,7 @@ class Settings(BaseSettings):
     ALGORITHM: str
 
     DATABASE_URL: str
+    groq_api_key: str = ""
 
     class Config:
         env_file = ".env"

@@ -104,3 +104,78 @@ models/
 uploads/
 artifacts/
 coverage.xml
+
+```gitignore
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+
+# Local databases and generated data
+*.db
+*.sqlite
+*.sqlite3
+
+# Machine learning artifacts
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.onnx
+
+# ChromaDB and vector database storage
+chroma_db/
+chroma/
+vector_store/
+
+# Frontend dependencies
+node_modules/
+frontend/node_modules/
+
+# Frontend build output
+dist/
+build/
+frontend/dist/
+frontend/build/
+
+# Local frontend environment files
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+```
